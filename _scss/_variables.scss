@@ -19,6 +19,10 @@ $helvetica: Helvetica, Arial, sans-serif;
 $helveticaNeue: "Helvetica Neue", Helvetica, Arial, sans-serif;
 $georgia: Georgia, serif;
 
+//google fonts
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:300,600);
+$open-sans:'Open Sans', sans-serif;
+
 // Mobile breakpoints
 @mixin mobile {
   @media screen and (max-width: 640px) {

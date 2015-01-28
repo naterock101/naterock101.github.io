@@ -22,10 +22,11 @@ body {
 	background: $white;
   font: 18px/1.4 $helvetica;
   color: $darkGray;
+  leftmargin: 100px;
 }
 
 p.intro {
-  font-family: 'Open Sans', sans-serif;
+  font-family: $open-sans;
 }
 
 .container {

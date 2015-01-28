@@ -19,9 +19,13 @@ html {
 }
 
 body {
-	background: blue;
+	background: $white;
   font: 18px/1.4 $helvetica;
   color: $darkGray;
+}
+
+p.intro {
+  font-family: 'Open Sans', sans-serif;
 }
 
 .container {

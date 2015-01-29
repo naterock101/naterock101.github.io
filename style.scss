@@ -28,8 +28,13 @@ p.intro {
   font-family: $open-sans;
   margin-left: 100px;
   margin-top: 100px;
-  width: 250px;
+  max-width: 550px;
 
+}
+
+a.fishbit_link {
+  color: black;
+  text-decoration: none;
 }
 
 .container {

@@ -202,7 +202,9 @@ $(document).ready(function () {
         $("#manPercent").val(number);
         
         //for the man profit
-        number = profitNumber - number;
+        //gotta get the manCost
+        newNumber = parseInt($("#manCost").val(), 10);
+        number = profitNumber - newNumber;
         //round the answer to decimal places
         number = Math.round(number * 100) / 100;
         //convert it back to a string and set its text

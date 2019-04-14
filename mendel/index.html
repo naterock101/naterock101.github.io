@@ -23,56 +23,20 @@
     <meta property="og:url" content="http://thetheme.io/thesaas/">
     <meta name="twitter:card" content="summary_large_image">
 
+    <!-- Injection code (for footer & header) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script>
       $(function() {
-        $("#footer").load("headfooter/footer.html");
+        $("#footer").load("navfooter/footer.html");
+        $("#navbar").load("navfooter/navbar.html");
       })
     </script>
   </head>
 
   <body>
 
-
-    <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-dark" data-navbar="smart">
-      <div class="container">
-
-        <div class="navbar-left">
-          <button class="navbar-toggler" type="button">&#9776;</button>
-          <a class="navbar-brand" href="index.html">
-            <img class="logo-dark" src="assets/img/logo-dark.png" alt="logo">
-            <img class="logo-light" src="assets/img/logo-light.png" alt="logo">
-          </a>
-        </div>
-
-        <section class="navbar-mobile">
-          <span class="navbar-divider d-mobile-none"></span>
-          <ul class="nav nav-navbar">
-            <li class="nav-item">
-              <a class="nav-link" href="#">Air Sensor</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">App <span class="arrow"></span></a>
-              <nav class="nav">
-                <a class="nav-link" href="#">iOS</a>
-                <a class="nav-link" href="#">Web</a>
-              </nav>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Pricing</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">FAQ</a>
-            </li>
-          </ul>
-        </section>
-
-        <a class="btn btn-light btn-sm ml-lg-5 mr-2" href="#">Login</a>
-        <a class="btn btn-sm btn-success" href="readme.html">SHOP</a>
-
-      </div>
-    </nav>
+    <!-- Navbar (injected)-->
+    <div id="navbar"></div>
     <!-- /.navbar -->
 
     <!-- Header -->
@@ -136,56 +100,9 @@
 
     </main>
 
+    <!-- Footer (injected)-->
     <div id="footer"></div>
-    <!-- Footer 
-      <footer class="footer py-7">
-        <div class="container">
-          <div class="row">
-
-            <div class="col-12">
-              <p><a href="#"><img src="assets/img/logo-dark.png" alt="logo"></a></p>
-            </div>
-
-            <div class="col-xl-5">
-              <p>Mendel Sensors is made with ❤ by RapidLED. Enter your email address so you never miss out on product updates. (We promise not to spam or sell your email).</p>
-              <div class="social social-bordered">
-                <a class="social-facebook" href="#"><i class="fa fa-facebook"></i></a>
-                <a class="social-twitter" href="#"><i class="fa fa-twitter"></i></a>
-                <a class="social-youtube" href="#"><i class="fa fa-youtube"></i></a>
-                <a class="social-instagram" href="#"><i class="fa fa-instagram"></i></a>
-              </div>
-              <hr class="d-xl-none">
-            </div>
-
-            <div class="col-4 col-xl-2 offset-xl-1">
-              <h6 class="mb-4 mt-1"><strong>Company</strong></h6>
-              <div class="nav flex-column">
-                <a class="nav-link" href="#">About</a>
-              </div>
-            </div>
-
-            <div class="col-4 col-xl-2">
-              <h6 class="mb-4 mt-1"><strong>Product</strong></h6>
-              <div class="nav flex-column">
-                <a class="nav-link" href="#">Sensor</a>
-                <a class="nav-link" href="#">Web App</a>
-                <a class="nav-link" href="#">iOS App</a>
-              </div>
-            </div>
-
-            <div class="col-4 col-xl-2">
-              <h6 class="mb-4 mt-1"><strong>Support</strong></h6>
-              <div class="nav flex-column">
-                <a class="nav-link" href="#">Contact</a>
-                <a class="nav-link" href="#">Pricing</a>
-                <a class="nav-link" href="#">FAQ</a>
-              </div>
-            </div>
-
-          </div>
-        </div>
-      </footer>
-      <!-- /.footer -->
+    <!-- /.footer -->
 
     <!-- Scripts -->
     <script src="assets/js/page.min.js"></script>

@@ -38,7 +38,168 @@
     <!-- Navbar (injected)-->
     <div id="navbar"></div>
     <!-- /.navbar -->
-    test
+
+    <!-- Pricing Section -->
+    <section class="section">
+      <div class="container">
+        <header class="section-header">
+          <small>Pricing</small>
+          <h2>More Sensors, Less $</h2>
+          <p class="lead">With our sensors you pay by the month. The more sensors you have the less you pay for each one.</p>
+          <div class="text-center my-7">
+            <div class="btn-group btn-group-toggle" data-toggle="buttons">
+              <label class="btn btn-round btn-outline-secondary w-150 active">
+                <input type="radio" name="pricing-1" value="monthly" autocomplete="off" checked> Monthly
+              </label>
+              <label class="btn btn-round btn-outline-secondary w-150">
+                <input type="radio" name="pricing-1" value="yearly" autocomplete="off"> Yearly
+              </label>
+            </div>
+          </div>
+          <small>20% discount when you pay yearly vs monthly.</small>
+        </header>
+
+        <div class="row gap-y text-center">
+          <div class="col-md-4">
+            <div class="pricing-1">
+              <p class="plan-name">1-2 Sensors</p>
+              <h2 class="price">
+                <span class="price-unit">$</span>
+                <span data-bind-radio="pricing-1" data-monthly="10" data-yearly="450">10</span>
+              </h2>
+              <p class="small text-lighter">Billed <span data-bind-radio="pricing-1" data-monthly="monthly" data-yearly="yearly">monthly</span>
+              </p>
+              <div class="text-muted">
+                <small>iOS and Web App</small><br>
+                <small>Something else</small><br>
+                <small>And Another thing!</small><br>
+              </div>
+              <br>
+              <p class="text-center py-3">
+                <a class="btn btn-primary" href="#">Shop</a>
+              </p>
+            </div>
+          </div>
+
+
+          <div class="col-md-4">
+            <div class="pricing-1 popular">
+              <p class="plan-name">3 Sensors</p>
+              <h2 class="price text-success">
+                <span class="price-unit">$</span>
+                <span data-bind-radio="pricing-1" data-monthly="20" data-yearly="200">20</span>
+              </h2>
+              <p class="small text-lighter">
+                Billed
+                <span data-bind-radio="pricing-1" data-monthly="monthly" data-yearly="yearly">monthly</span>
+              </p>
+
+              <div class="text-muted">
+                <small>Same features as 1 Sensor</small><br>
+                <small>30% discount per sensor</small><br>
+                <small>Plus this extra additional feature set</small><br>
+              </div>
+
+              <br>
+              <p class="text-center py-3">
+                <a class="btn btn-success" href="#" data-bind-href="pricing-1" data-monthly="#monthly" data-yearly="#yearly">Shop</a>
+              </p>
+            </div>
+          </div>
+
+
+          <div class="col-md-4">
+            <div class="pricing-1">
+              <p class="plan-name">10+ sensors</p>
+              <h2 class="price">
+                <span class="price-unit">$</span>
+                <span data-bind-radio="pricing-1" data-monthly="50" data-yearly="500">50</span>
+              </h2>
+              <p class="small text-lighter">
+                Billed
+                <span data-bind-radio="pricing-1" data-monthly="monthly" data-yearly="yearly">monthly</span>
+              </p>
+
+              <div class="text-muted">
+                <small>50% off price per sensor</small><br>
+                <small>Same as other features</small><br>
+                <small>Plus even more amazing features.</small><br>
+              </div>
+
+              <br>
+              <p class="text-center py-3">
+                <a class="btn btn-primary" href="#" data-bind-href="pricing-1" data-monthly="#monthly" data-yearly="#yearly">Shop</a>
+              </p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+    <!-- /.Pricing Section -->
+
+    <!-- FAQ -->
+    <section class="section">
+      <div class="container">
+        <header class="section-header">
+          <h2>Frequently Asked Pricing Questions</h2>
+          <p>Got a question? We've got answers. If you have some other questions, contact us using email at support@mendelsensors.com. (Ask for Mike. Tell him Eric sent you.)</p>
+        </header>
+
+        <div class="row gap-y">
+          <div class="col-md-6 col-xl-4">
+            <h5>How much does the unit cost?</h5>
+            <p>We charge $20 for our sensors and it comes with the sensor plus three free months of service.  After that we charge you on a monthly basis. If you decide to stop using our service you don't pay us. But we think you'll enjoy using it.</p>
+          </div>
+
+          <div class="col-md-6 col-xl-4">
+            <h5>Can you explain the monthly fee?</h5>
+            <p>We make money by charging you a monthly fee. We think this aligns us all towards the same goals. It's cheap for you to try and keeps us continuing to reinvest in making our platform better.</p>
+          </div>
+
+          <div class="col-md-6 col-xl-4">
+            <h5>Why can't I set up payments on the iOS app?</h5>
+            <p>Unfortunately, Apple takes a 30% commission! That's a really high number and would ential us increasing our price by 50%! We think this way is better for you.</p>
+          </div>
+
+          <div class="col-md-6 col-xl-4">
+            <h5>Is this a secure site for purchases?</h5>
+            <p>Absolutely! We work with Stripe which guarantees your safety and security. All billing information is stored on our payment processing partner which has the most stringent level of certification available in the payments industry.</p>
+          </div>
+
+          <div class="col-md-6 col-xl-4">
+            <h5>Can I cancel my subscription?</h5>
+            <p>You can cancel your subscription anytime in your account. Once the subscription is cancelled, you will not be charged next month. You will continue to have access to your account until your current subscription expires.</p>
+          </div>
+
+
+          <div class="col-md-6 col-xl-4">
+            <h5>Can I pause my subscription?</h5>
+            <p>Yes! We totally get that you might have a few months inbetween grows where you don't need to keep paying us but want your data to still be available in the future.</p>
+          </div>
+
+
+          <div class="col-md-6 col-xl-4">
+            <h5>Can I update my card details?</h5>
+            <p>Yes. Go to the billing section of your dashboard and update your payment information.</p>
+          </div>
+
+
+          <div class="col-md-6 col-xl-4">
+            <h5>Can I request refund?</h5>
+            <p>Unfortunately, not. We do not issue full or partial refunds for any reason.</p>
+          </div>
+
+
+          <div class="col-md-6 col-xl-4">
+            <h5>Can I try your service for free?</h5>
+            <p>When you purchase a unit it comes with three free months of service!</p>
+          </div>
+        </div>
+
+      </div>
+    </section>
+    <!-- /. FAQ -->
 
     <!-- Footer (injected)-->
     <div id="footer"></div>

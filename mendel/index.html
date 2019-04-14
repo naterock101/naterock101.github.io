@@ -22,6 +22,13 @@
     <meta property="og:image" content="http://thetheme.io/thesaas/assets/img/og-img.jpg">
     <meta property="og:url" content="http://thetheme.io/thesaas/">
     <meta name="twitter:card" content="summary_large_image">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+      $(function() {
+        $("#header").load("headfooter/footer.html");
+      })
+    </script>
   </head>
 
   <body>
@@ -129,8 +136,8 @@
 
     </main>
 
-
-    <!-- Footer -->
+    <div id="footer"></div>
+    <!-- Footer 
       <footer class="footer py-7">
         <div class="container">
           <div class="row">
